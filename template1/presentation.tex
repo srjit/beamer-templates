@@ -1,0 +1,73 @@
+
+%-------------------------------------------------------------
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+
+\usepackage{latexsym,xcolor,multicol,booktabs,calligra}
+\usepackage{amsmath,amssymb,BOONDOX-cal,bm}		
+\usepackage{graphicx,pstricks,stackengine}
+
+\author{Sreejith Sreekumar}
+\title{Presentation Title}
+\subtitle{Subtitle}
+\institute{Digitas Inc.}
+\date{\today}
+
+\logo{\includegraphics[height=0.8cm]{unicorn.png}\hspace*{0.3cm}}
+
+\usepackage{style}
+
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\newtheorem{thm}{Theorem}[theorem]
+
+
+%—-------------------------------------------------------------
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	\begin{frame}
+		\tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+	\end{frame}
+		
+	
+	%—------------------------------------------------------
+	\section{Section 1}
+	
+		\begin{frame}
+			\begin{itemize}
+				\item This is item 1
+				\item This is item 2
+			\end{itemize}
+		\end{frame}
+	
+	%% %-------------------------------------------------------	
+	\section{Section 2}
+	    \subsection{Subsection 1 of Section 2}	
+	    
+		\begin{frame}
+		  \begin{enumerate}
+            \item This is an item from section 2; Item 1
+            \item This is an item from section 2; Item 2
+			\newline
+			\url{https://www.latexstudio.net/archives/11443.html}
+			\end{enumerate}	
+		\end{frame}
+	
+	%% %-----------------------------------------------------
+	\section{Section 3}
+	    \subsection{Subsection 1 of Section 3}
+	
+	\begin{frame}{}
+		\begin{itemize}
+			\item Foo
+			\item Bar
+			\item BarFoo
+		\end{itemize}
+	\end{frame}
+
+\end{document}
